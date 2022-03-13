@@ -1,0 +1,39 @@
+<div class="filters">
+    <mat-form-field>
+        <mat-label>Sort</mat-label>
+        <mat-select
+            panelClass="sort-select"
+            [(ngModel)]="sort"
+        >
+            <mat-option value="name">Name</mat-option>
+            <mat-option value="-released">Released</mat-option>
+            <mat-option value="-added">Added</mat-option>
+            <mat-option value="-created">Created</mat-option>
+            <mat-option value="-updated">Updated</mat-option>
+            <mat-option value="-rating">Rating</mat-option>
+            <mat-option value="-metacritic">Metacritic</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="games">
+    <div class="game">
+        <div class="game-thumb-container">
+            <img 
+            src="https://static.toiimg.com/thumb/msid-89395543,width-400,resizemode-4/89395543.jpg" 
+            alt="GTA V"
+            class="Game-GTAV"
+            >
+        </div>
+        <div class="game-description">
+            <p class="game-name">Name</p>
+            <div class="game-platform">
+                <img 
+                class="game-platform"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Xbox_one_logo.svg/1024px-Xbox_one_logo.svg.png" 
+                alt="" 
+                >
+            </div>
+        </div>
+    </div>
+</div>
